@@ -14,11 +14,72 @@ img {
   max-width: 100%;
 }
 
-
-ul, li {
+ul,
+li {
   list-style-type: none;
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+h1 {
+  line-height: 1.25 !important;
+}
+.max-width {
+  @apply px-5 lg:max-w-5xl 2xl:px-0 lg:mx-auto xl:max-w-6xl;
+}
+
+.btn-cta {
+  @apply bg-cyan-500 py-2 px-4 text-white hover:opacity-75 transition-all duration-150 cursor-pointer;
+}
+
+.boost {
+  background-color: hsl(257 27% 26%);
+  height: 17.188rem;
+}
+
+.shortener {
+  background-color: hsl(257 27% 26%);
+  height: 17.188rem;
+  border-radius: 8px;
+}
+
+.shortener .form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.shortener img {
+  height: 17.188rem;
+  @apply w-full rounded-lg;
+}
+.boost img {
+  height: 17.188rem;
+  @apply w-full;
+}
+
+.boost .boost-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1024px) {
+  .card article:nth-child(3) {
+    transform: translateY(2rem);
+  }
+
+  .card article:last-child {
+    transform: translateY(4rem);
+  }
+
+  .line {
+    @apply bg-cyan-500 h-2 w-full absolute;
+    top: 50%;
+  }
 }
